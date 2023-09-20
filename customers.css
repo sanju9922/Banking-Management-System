@@ -1,0 +1,77 @@
+body{
+    /* background-color: rgb(183, 215, 244); */
+}
+.heading{
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 0.1cm;
+}
+.table{
+    margin: 25px;
+}
+.buttonrow{
+    text-align: center;
+}
+.viewHistory{
+    
+    font-size: large;
+    
+    /* padding: 50px; */
+    text-align: end;
+    
+    /* border: 1px solid black; */
+    
+    
+}
+.navelement{
+    font-size: large;
+    border: 1px solid black;
+    margin-left: 750px;
+    background-color: aqua;
+    padding: 10px;
+    letter-spacing: normal;
+}
+a{
+    text-decoration: none;
+}
+.navelement :hover{
+    background-color: rgb(175, 249, 249);
+}
+.big-heading{
+    font-family: "Montserrat";
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .navbar{
+    padding:0 0 4.5rem;
+  }
+  
+  .navbar-brand{
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .nav-item
+  {
+    padding: 0 18px;
+  }
+  .nav-link{
+    font-size: 1.2rem;
+    font-family: "Montserrat";
+    font-weight: 900;
+    
+  }
+  .container-fluid{
+    padding: 3% 15% 7%;
+  }
+  #title{
+    background-color: #000293;
+    color: #fff;
+    text-align: left;
+  }
+  .rowdata{
+    text-align: center;
+  }

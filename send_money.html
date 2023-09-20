@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="sendMoney.css">
+</head>
+<body>
+  <section id="title">
+
+    <!-- Nav Bar -->
+    <div class="container-fluid">
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">EDGE Bank</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <h1 class="big-heading">Transaction Page</h1>
+          </ul>
+        </div>
+      </nav>
+      
+
+      <!-- Title -->
+
+      <div class="row">
+
+        <div class="col">
+
+          <h1 class="big-heading">Make Safe and Secure Transactions</h1>
+
+          <!-- <h3>add some catchy logo</h3> -->
+
+        </div>
+
+
+
+        
+
+      </div>
+    </div>
+  </section>
+
+    <!-- <h1 class="heading">TRANSACTION</h1> -->
+    
+    <!-- <nav class="select-receiver"> <label for="customer" class="selectcustomer">Select the receiver:</label></nav> -->
+    <table class="table table-striped table-bordered table-dark" id="accountTable">
+      <thead class="thead-dark">
+        <tr class="rowdata">
+          <th scope="col">CUSTOMER ID</th>
+          <th scope="col">NAME</th>
+          
+          <th scope="col">CURRENT BALANCE (INR)</th>
+          <th scope="col">TRANSFER MONEY</th>
+        </tr>
+      </thead>
+      <tbody>
+        <div class="customer" id="customer1">
+        <tr class="rowdata">
+          <td>001</td>
+          <td>Sathish</td>
+          
+          <td><span id="balance1">15000</span></td>
+          <td class="buttonrow"><button type="button" onclick="sendMoney(1)" class="btn btn-light btn-sm">SEND</button></td>
+        </tr> 
+        </div>
+        <div class="customer" id="customer2">
+        <tr class="rowdata">
+          <td>002</td>
+          <td>Balaji</td>
+          
+          <td><span id="balance2">1020</span></td>
+          <td class="buttonrow"><button type="button" onclick="sendMoney(2)" class="btn btn-light btn-sm">SEND</button></td>
+          
+        </tr> 
+        </div> 
+        <div class="customer" id="customer3" >
+        <tr class="rowdata">
+          <td>003</td>
+          <td>Surya Prakash</td>
+          
+          <td><span id="balance3">190000</span></td>
+          <td class="buttonrow"><button type="button" onclick="sendMoney(3)" class="btn btn-light btn-sm">SEND</button></td>
+        </tr> 
+      </div>
+      <div class="customer" id="customer4">
+        <tr class="rowdata">
+          <td>004</td>
+          <td>Smitha</td>
+          
+          <td><span id="balance4">6000000</span></td>
+          <td class="buttonrow"><button type="button" onclick="sendMoney(4)" class="btn btn-light btn-sm">SEND</button></td>
+        </tr> 
+      </div>
+      <div class="customer" id="customer5">
+        <tr class="rowdata">
+          <td>005</td>
+          <td>Mohan</td>
+          
+          <td><span id="balance5">5327000</span></td>                                                                                                                                                                                    
+          <td class="buttonrow"><button type="button" onclick="sendMoney(5)" class="btn btn-light btn-sm">SEND</button></td>
+        </tr> 
+      </div>
+      <div class="customer" id="customer6">
+        <tr class="rowdata">
+          <td>006</td>
+          <td>Ayesha</td>
+          
+          <td><span id="balance6">9280000</span></td>
+          <td class="buttonrow"><button type="button" onclick="sendMoney(6)" class="btn btn-light btn-sm">SEND</button></td>
+        </tr> 
+      </div>
+      <div class="customer" id="customer7">
+        <tr class="rowdata">
+          <td>007</td>
+          <td>Jenny</td>
+          
+          <td><span id="balance7">546000</span></td>
+          <td class="buttonrow"><button type="button" onclick="sendMoney(7)" class="btn btn-light btn-sm">SEND</button></td>
+        </tr>
+      </div>
+      <div class="customer" id="customer8">
+        <tr class="rowdata">
+          <td>008</td>
+          <td>Pavani Reddy</td>
+          
+          <td><span id="balance8">3461000</span></td>
+          <td class="buttonrow"><button type="button" onclick="sendMoney(8)" class="btn btn-light btn-sm">SEND</button></td>
+        </tr> 
+      </div>
+      <div class="customer" id="customer9">
+        <tr class="rowdata">
+          <td>009</td>
+          <td>Sanam Shetty</td>
+          
+          <td><span id="balance9">76000</span></td>
+          <td class="buttonrow"><button type="button" onclick="sendMoney(9)" class="btn btn-light btn-sm">SEND</button></td>
+        </tr> 
+      </div>
+      <div class="customer" id="customer10">
+        <tr class="rowdata">
+          <td>010</td>
+          <td>Hari</td>
+          
+          <td><span id="balance10">230000</span></td>
+          <td class="buttonrow"><button type="button" onclick="sendMoney(10)" class="btn btn-light btn-sm">SEND</button></td>
+        </tr>
+      </div>
+      </tbody>
+    </table>
+    
+    <div class="transfer-container" id="transfer-container">
+      <h2 class="heading">Transfer Money</h2>
+      <div class="transfer">
+        <label for="fromAccount">Sender:</label>
+        <select id="fromAccount">
+          <option value="001"> Sathish</option>
+          <option value="002"> Balaji</option>
+          <option value="003"> Surya Prakash</option>
+          <option value="004"> Smitha</option>
+          <option value="005"> Mohan</option>
+          <option value="006"> Ayesha</option>
+          <option value="007"> Jenny</option>
+          <option value="008"> Pavani Reddy</option>
+          <option value="009"> Sanam Shetty</option>
+          <option value="010"> Hari</option>
+          <!-- Add options for other members -->
+        </select>
+        <br><br>
+        <label for="toAccount">Receiver:</label>
+        <select id="toAccount">
+          <option value="001"> Sathish</option>
+          <option value="002"> Balaji</option>
+          <option value="003"> Surya Prakash</option>
+          <option value="004"> Smitha</option>
+          <option value="005"> Mohan</option>
+          <option value="006"> Ayesha</option>
+          <option value="007"> Jenny</option>
+          <option value="008"> Pavani Reddy</option>
+          <option value="009"> Sanam Shetty</option>
+          <option value="010"> Hari</option>
+          <!-- Add options for other members -->
+        </select>
+        <br><br>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" min="1">
+      </div>
+      <button class="btn button" onclick="transferMoney()">Transfer</button>
+    </div>
+  
+    <section class="check-history" id="check-history">
+      <h2 class="transaction-history heading">Transaction History</h2>
+      <table id="transactionTable">
+        <tr>
+          <th>From</th>
+          <th>To</th>
+          <th>Amount</th>
+          <th>Balance</th>
+        </tr>
+      </table>
+    </section>
+    <br>
+    <br>
+    
+    <section class="check-history" id="check-history">
+      <h2 class="transaction-history heading">Transaction History</h2>
+      <table id="transactionTable">
+        <tr>
+          <th>From</th>
+          <th>To</th>
+          <th>Amount</th>
+          <th>Balance</th>
+        </tr>
+      </table>
+    </section>
+    <script src="script3.js"></script>
+</body>
+</html>
+
+<!-- 
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Send Money</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Send Money</h1>
+  <form onsubmit="return transferMoney(event)">
+    <label for="customer">Select Customer:</label>
+    <select id="customer">
+      <option value="customer1">John Doe</option>
+      <option value="customer2">Jane Smith</option>
+    </select>
+    <br>
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" min="1" required>
+    <br>
+    <button type="submit">Send</button>
+  </form>
+
+  <script src="script2.js"></script>
+</body>
+</html>
+
+</html>
+
+ -->

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="sendMoney.css">
+    <link rel="stylesheet" href="dupli.css">
+</head>
+<body>
+  <section id="title">
+
+    <!-- Nav Bar -->
+    <div class="container-fluid">
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">EDGE Bank</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <h1 class="big-heading">Transaction Page</h1>
+          </ul>
+        </div>
+      </nav>
+      
+
+      <!-- Title -->
+
+      <div class="row">
+
+        <div class="col">
+
+          <h1 class="big-heading">Make Safe and Secure Transactions</h1>
+
+          <!-- <h3>add some catchy logo</h3> -->
+
+        </div>
+
+
+
+        
+
+      </div>
+    </div>
+  </section>
+  <section class="details" id="details">
+    <h2 class="big-heading">Account Details</h2>
+    <table id="accountTable" class="table table-striped table-bordered table-dark">
+
+      <tr class="rowdata">
+        <th>Customer-ID</th>
+        <th>Email ID</th>
+        <th>Name</th>
+        <th>Balance</th>
+      </tr>
+
+      <tr class="rowdata">
+        <td>001</td>
+        <td>sathish@gmail.com</td>
+        <td>Sathish</td>
+        <td>5000</td>
+      </tr>
+      <tr class="rowdata">
+        <td>002</td>
+        <td>Balaji@gmail.com</td>
+        <td>Balaji</td>
+        <td>5000</td>
+      </tr>
+      <tr class="rowdata">
+        <td>003</td>
+        <td>SuryaPrakash@gmail.com</td>
+        <td>Surya Prakash</td>
+        <td>5000</td>
+      </tr>
+      <tr class="rowdata">
+        <td>004</td>
+        <td>Smitha@gmail.com</td>
+        <td>Smitha</td>
+        <td>5000</td>
+      </tr>
+      <tr class="rowdata">
+        <td>005</td>
+        <td>Mohan@gmail.com</td>
+        <td>Mohan</td>
+        <td>5000</td>
+      </tr>
+      <tr class="rowdata">
+        <td>006</td>
+        <td>Ayesha@gmail.com</td>
+        <td>Ayesha</td>
+        <td>5000</td>
+      </tr>
+      <tr class="rowdata">
+        <td>007</td>
+        <td>jenny@gmail.com</td>
+        <td>Jenny</td>
+        <td>5000</td>
+      </tr>
+      <tr class="rowdata">
+        <td>008</td>
+        <td>pavanireddy@gmail.com</td>
+        <td>Pavani Reddy</td>
+        <td>5000</td>
+      </tr>
+      <tr class="rowdata">
+        <td>009</td>
+        <td>sanamshetty@gmail.com</td>
+        <td>Sanam Shetty</td>
+        <td>5000</td>
+      </tr>
+      <tr class="rowdata">
+        <td>010</td>
+        <td>hari@gmail.com</td>
+        <td>Hari</td>
+        <td>5000</td>
+      </tr>
+      <!-- Add more rows for other members -->
+    </table>
+  </section>
+  <a class="nav-item" href="#check-history">
+    <div class="big-heading" style="color: azure;">Click here to view the transaction-history</div></a>
+  <div class="transfer-container" id="transfer-container">
+    <h2 class="big-heading">Transfer Money</h2>
+    <div class="transfer">
+      <label for="fromAccount" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;">Sender:</label>
+      <select id="fromAccount">
+        <option value="001">001</option>
+        <option value="002">002</option>
+        <option value="003">003</option>
+        <option value="004">004</option>
+        <option value="005">005</option>
+        <option value="006">006</option>
+        <option value="007">007</option>
+        <option value="008">008</option>
+        <option value="009">009</option>
+        <option value="010">010</option>
+        
+        <!-- Add options for other members -->
+      </select>
+      <br>
+      <label for="toAccount" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;">Receiver:</label>
+      <select id="toAccount">
+        <option value="001">001</option>
+        <option value="002">002</option>
+        <option value="003">003</option>
+        <option value="004">004</option>
+        <option value="005">005</option>
+        <option value="006">006</option>
+        <option value="007">007</option>
+        <option value="008">008</option>
+        <option value="009">009</option>
+        <option value="010">010</option>
+        <!-- Add options for other members -->
+      </select>
+      <br>
+      <label for="amount" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;">Amount:</label>
+      <input type="number" id="amount" min="1">
+      <br>
+      
+      
+      <button class="btn button" onclick="transferMoney()">Transfer</button>
+    
+    </div>
+    <!-- <button class="btn button" onclick="transferMoney()">Transfer</button> -->
+  </div>
+   
+
+  <section class="check-history" id="check-history">
+    <h2 class="transaction-history big-heading">Transaction History</h2>
+    <table id="transactionTable" class="table table-striped table-bordered table-dark">
+      <tr class="rowdata">
+        <th>From</th>
+        <th>To</th>
+        <th>Amount</th>
+        <th>Balance</th>
+      </tr>
+    </table>
+  </section>
+  <script src="script3.js"></script>
+</body>
+</html>
